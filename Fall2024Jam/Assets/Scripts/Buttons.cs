@@ -10,6 +10,11 @@ public class Buttons : MonoBehaviour
         SceneManager.LoadScene("LevelScene");
     }
 
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene("MainMenuScene");
+    }
+
     public void QuitButton()
     {
         Application.Quit();
