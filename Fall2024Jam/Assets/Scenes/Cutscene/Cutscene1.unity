@@ -215,37 +215,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &540000123
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 540000125}
-  m_Layer: 0
-  m_Name: SceneChanger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &540000125
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540000123}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8048605, y: 0.8806194, z: -2.8533554}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &547489756
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +444,9 @@ MonoBehaviour:
   backgroundList:
   - {fileID: 21300000, guid: 8f3c8f1a05aa00c44a952e61a0daa3a4, type: 3}
   - {fileID: 21300000, guid: 586e0ed07b2ace045ba71ebba78d93a4, type: 3}
+  - {fileID: 21300000, guid: aa00c72b5d6e4de4c813905fd2def45b, type: 3}
+  - {fileID: 21300000, guid: ab1198743e37d8442877a5e17ccfc4db, type: 3}
+  - {fileID: 21300000, guid: 16e1624adc43fb64284a5caeab361678, type: 3}
   backgroundImage: {fileID: 547489758}
   textList:
   - Rumors of a spooky cult headquartered in a graveyard have begun to spread.
@@ -659,6 +631,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 86157259}
-  - {fileID: 540000125}
   - {fileID: 1350445658}
   - {fileID: 1873290048}
