@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour
 {
     public void PlayButton()
     {
-        SceneManager.LoadScene("LevelScene");
+        SceneManager.LoadScene("DifficultyScene");
     }
 
     public void MainMenuButton()
@@ -19,5 +19,19 @@ public class Buttons : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Quit");
+    }
+
+    public void EasyButton()
+    {
+        SceneManager.LoadScene("LevelScene");
+    }
+    public void NormalButton()
+    {
+        SceneManager.LoadScene("LevelScene");
+    }
+
+    public void HardButton()
+    {
+        SceneManager.LoadScene("LevelScene");
     }
 }
