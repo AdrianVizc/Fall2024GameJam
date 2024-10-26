@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 192931084}
   - component: {fileID: 192931086}
   - component: {fileID: 192931085}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9613,7 +9613,7 @@ GameObject:
   - component: {fileID: 291814237}
   - component: {fileID: 291814236}
   - component: {fileID: 291814235}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11585,7 +11585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06326d6db926fda4f9c36a6d74f7b884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1912260617}
+  player: {fileID: 2150173430251796784}
   heartSprites:
   - {fileID: 965631042}
   - {fileID: 1988896834}
@@ -11694,7 +11694,7 @@ GameObject:
   - component: {fileID: 1427761508}
   - component: {fileID: 1427761507}
   - component: {fileID: 1427761510}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Walls
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15664,6 +15664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyPanel: {fileID: 369329837}
+  player: {fileID: 2150173430251796784}
 --- !u!1 &1912260615
 GameObject:
   m_ObjectHideFlags: 0

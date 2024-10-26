@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        hp.UpdateHealth();
     }
 
 
@@ -44,9 +43,11 @@ public class PlayerController : MonoBehaviour
         rb.rotation = angle;
     }
 
-    public void SetStartingHealth(int hp)
+    public void SetStartingHealth(int health)
     {
-        startHealth = hp;
+        startHealth = health;
+        currentHealth = health;
+        hp.ShowHealth();
     }
 
     public int GetStartingHealth()

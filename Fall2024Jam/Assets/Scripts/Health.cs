@@ -20,6 +20,17 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        UpdateHealth();
+    }
+
+    public void ShowHealth()
+    {
         for (int i = 0; i < heartSprites.Length; i++)
         {
             if (i < player.GetStartingHealth())
@@ -33,13 +44,6 @@ public class Health : MonoBehaviour
         }
         UpdateHealth();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        UpdateHealth();
-    }
-
     public void UpdateHealth()
     {
         for (int i = 0; i < heartSprites.Length; i++)

@@ -7,6 +7,9 @@ public class DifficultyMenu : MonoBehaviour
 {
     [SerializeField] private GameObject difficultyPanel;
 
+    [SerializeField]
+    private PlayerController player;
+
     private void Start()
     {
         Time.timeScale = 0f;
@@ -14,18 +17,21 @@ public class DifficultyMenu : MonoBehaviour
 
     public void EasyButton()
     {
+        player.SetStartingHealth(5);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void MediumButton()
     {
+        player.SetStartingHealth(3);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void HardButton()
     {
+        player.SetStartingHealth(1);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
     }
