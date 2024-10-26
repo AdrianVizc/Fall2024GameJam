@@ -21,5 +21,9 @@ public class CultistBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collider.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
 }
