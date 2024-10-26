@@ -9830,7 +9830,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 6900
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -9893,7 +9893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rateOfFire: 2
-  bullet: {fileID: 7358245919926911428, guid: c7dc89e06c5f17a4b97cea8a303d77e1, type: 3}
+  bullet: {fileID: 5149911216038878018, guid: b47b561ddd99acb469e1a052a42bd628, type: 3}
   bulletPos: {fileID: 868350758}
 --- !u!114 &326450486
 MonoBehaviour:
@@ -14975,7 +14975,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 6900
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -16207,9 +16207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f2e4fff84d9e5e48800443a8574341d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletForce: 20
+  bulletForce: 5
   firePoint: {fileID: 4173968656254930856}
-  bulletPrefab: {fileID: 8654921842343410223, guid: beb6e51c8aef31148830de5545fe7285, type: 3}
+  bulletPrefab: {fileID: 7358245919926911428, guid: c7dc89e06c5f17a4b97cea8a303d77e1, type: 3}
   cam: {fileID: 519420031}
 --- !u!1 &7662794175087380491
 GameObject:
@@ -16237,6 +16237,6 @@ SceneRoots:
   - {fileID: 291814237}
   - {fileID: 1912260620}
   - {fileID: 1445868432}
-  - {fileID: 1427514015}
   - {fileID: 326450489}
+  - {fileID: 1427514015}
   - {fileID: 3494758058718641796}
