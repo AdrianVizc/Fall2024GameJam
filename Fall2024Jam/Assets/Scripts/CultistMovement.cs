@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class CultistMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float speed = 10.0f;
 
-    // Update is called once per frame
-    void Update()
+    
+
+    private void RandomDirection()
     {
-        
+
     }
 }
