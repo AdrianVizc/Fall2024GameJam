@@ -15,33 +15,40 @@ public class Typing : MonoBehaviour
     [SerializeField] string leadingChar = "";
     [SerializeField] bool leadingCharBeforeDelay = false;
 
+    [SerializeField] List<string> textList; // List of texts to type out
+    private int currentTextIndex = 0;       // Index of the current text in the list
+
     // Initialization
     void Start()
     {
-        _text = GetComponent<Text>()!;
-        _tmpProText = GetComponent<TMP_Text>()!;
+        _text = GetComponent<Text>();
+        _tmpProText = GetComponent<TMP_Text>();
+
+        StartNextText(); // Start the typing effect for the first text
+    }
+
+    void StartNextText()
+    {
+        if (currentTextIndex >= textList.Count) return; // No more text to display
+
+        writer = textList[currentTextIndex]; // Get the current text from the list
 
         if (_text != null)
         {
-            writer = _text.text;
-            _text.text = "";
-
-            StartCoroutine("TypeWriterText");
+            _text.text = ""; // Clear the UI Text field
+            StartCoroutine(TypeWriterText());
         }
 
         if (_tmpProText != null)
         {
-            writer = _tmpProText.text;
-            _tmpProText.text = "";
-
-            StartCoroutine("TypeWriterTMP");
+            _tmpProText.text = ""; // Clear the TMP field
+            StartCoroutine(TypeWriterTMP());
         }
     }
 
     IEnumerator TypeWriterText()
     {
         _text.text = leadingCharBeforeDelay ? leadingChar : "";
-
         yield return new WaitForSeconds(delayBeforeStart);
 
         foreach (char c in writer)
@@ -59,12 +66,15 @@ public class Typing : MonoBehaviour
         {
             _text.text = _text.text.Substring(0, _text.text.Length - leadingChar.Length);
         }
+
+        // Move to next text after finishing typing
+        currentTextIndex++;
+        StartNextText();
     }
 
     IEnumerator TypeWriterTMP()
     {
         _tmpProText.text = leadingCharBeforeDelay ? leadingChar : "";
-
         yield return new WaitForSeconds(delayBeforeStart);
 
         foreach (char c in writer)
@@ -82,6 +92,10 @@ public class Typing : MonoBehaviour
         {
             _tmpProText.text = _tmpProText.text.Substring(0, _tmpProText.text.Length - leadingChar.Length);
         }
+
+        // Move to next text after finishing typing
+        currentTextIndex++;
+        StartNextText();
     }
 
 }
