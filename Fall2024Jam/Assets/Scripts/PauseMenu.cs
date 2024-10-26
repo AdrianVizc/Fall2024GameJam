@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] GameObject difficultyMenu;
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
@@ -15,7 +16,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !difficultyMenu.activeSelf)
         {
             if (GameIsPaused)
             {
