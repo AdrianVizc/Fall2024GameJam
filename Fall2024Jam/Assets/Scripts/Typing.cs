@@ -14,7 +14,8 @@ public class Typing : MonoBehaviour
     [SerializeField] float timeBtwChars = 0.1f;
     [SerializeField] string leadingChar = "";
     [SerializeField] bool leadingCharBeforeDelay = false;
-
+    [SerializeField] List<Sprite> backgroundList;
+    [SerializeField] Image backgroundImage;
     [SerializeField] List<string> textList; // List of texts to type out
     private int currentTextIndex = 0;       // Index of the current text in the list
 
@@ -32,6 +33,11 @@ public class Typing : MonoBehaviour
         if (currentTextIndex >= textList.Count) return; // No more text to display
 
         writer = textList[currentTextIndex]; // Get the current text from the list
+
+        if (backgroundList.Count > currentTextIndex && backgroundImage != null)
+        {
+            backgroundImage.sprite = backgroundList[currentTextIndex];
+        }
 
         if (_text != null)
         {
