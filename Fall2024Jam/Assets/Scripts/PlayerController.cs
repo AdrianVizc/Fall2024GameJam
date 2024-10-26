@@ -38,9 +38,6 @@ public class PlayerController : MonoBehaviour
     {
         rb.MovePosition(rb.position + movSpeed * movement * Time.fixedDeltaTime);
 
-        Vector2 lookDir = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = angle;
     }
 
     public void SetStartingHealth(int health)
