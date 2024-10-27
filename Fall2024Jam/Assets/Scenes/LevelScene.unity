@@ -19463,6 +19463,10 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7871900051995460220, guid: cf3bf3b839e8fc0448949d7b95c3720e, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871900051995460220, guid: cf3bf3b839e8fc0448949d7b95c3720e, type: 3}
       propertyPath: m_AutoTraverseOffMeshLink
       value: 1
       objectReference: {fileID: 0}
