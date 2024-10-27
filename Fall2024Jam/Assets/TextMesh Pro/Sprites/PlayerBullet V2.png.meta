@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a5f2f09460d4d54aaa10220f52bb85b
+guid: bbf9a540df7b1a04dacc1f6508693493
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,24 +106,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cultist Projectile_0
+      name: PlayerBullet V2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87a768947d6bef0489bd2dc705645a8f
-      internalID: 1918180879
+      spriteID: f2a403e7be660554fa97c62300d184d5
+      internalID: -320279397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist Projectile_1
+      name: PlayerBullet V2_1
       rect:
         serializedVersion: 2
         x: 16
@@ -158,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a9b8b9e0f37af648b2c19cb3e92602d
-      internalID: 590820165
+      spriteID: 4ff691d0d113f0945a74127a6681192f
+      internalID: 593127526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist Projectile_2
+      name: PlayerBullet V2_2
       rect:
         serializedVersion: 2
         x: 32
@@ -179,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 232a824ee7fef254786fa9638a67c7ea
-      internalID: -2084932945
+      spriteID: b9c72393bbf7b6e44a68bf86e7093ed2
+      internalID: 1382699022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist Projectile_3
+      name: PlayerBullet V2_3
       rect:
         serializedVersion: 2
         x: 48
@@ -200,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff814206dc6498a49908fd48b67b0f87
-      internalID: -1283773480
+      spriteID: f2a5852445c100940a4cec98cfe29ef4
+      internalID: 937951251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist Projectile_4
+      name: PlayerBullet V2_4
       rect:
         serializedVersion: 2
         x: 64
@@ -221,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1d9138e4339f824a9db52f954ee11f0
-      internalID: 983898687
+      spriteID: e972472aefccbe84b9b0fe56ed26ac37
+      internalID: -935805575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist Projectile_5
+      name: PlayerBullet V2_5
       rect:
         serializedVersion: 2
         x: 80
@@ -242,8 +229,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b2eaff88530cbc4cabc1ac1d1385e56
-      internalID: 1926958753
+      spriteID: c39bafa1ad6317b46a787b3587d88ff4
+      internalID: 487051104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerBullet V2_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124d1e917f1f37c4d8f7dba23c74aa21
+      internalID: 152145488
       vertices: []
       indices: 
       edges: []
@@ -259,12 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cultist Projectile_0: 1918180879
-      Cultist Projectile_1: 590820165
-      Cultist Projectile_2: -2084932945
-      Cultist Projectile_3: -1283773480
-      Cultist Projectile_4: 983898687
-      Cultist Projectile_5: 1926958753
+      PlayerBullet V2_0: -320279397
+      PlayerBullet V2_1: 593127526
+      PlayerBullet V2_2: 1382699022
+      PlayerBullet V2_3: 937951251
+      PlayerBullet V2_4: -935805575
+      PlayerBullet V2_5: 487051104
+      PlayerBullet V2_6: 152145488
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

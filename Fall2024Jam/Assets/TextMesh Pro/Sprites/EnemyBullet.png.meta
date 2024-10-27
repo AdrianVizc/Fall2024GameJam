@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 581f5c47a7fcb48459b2283c349007f8
+guid: ce0eaac3bb988b7438bc6cd167e055fc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,97 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cultist_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ccdf357f76de7e4883cc08f167ea2e6
-      internalID: -1849051952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cultist_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 375e39bccfd8fb440a0b9de716f22639
-      internalID: -1119486046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cultist_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c8ed983094ed6f48a1b7ed029e68650
-      internalID: 1967855088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cultist_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82d8f33dc9181bc459bdf488ca8dfad3
-      internalID: 1835375345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cultist_4
+      name: EnemyBullet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20a02b7996de3144d9ab18dd4d52b7da
-      internalID: 1222990998
+      spriteID: 5e30db7998caf6c4b8da60dfcd49eeda
+      internalID: -23903365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist_5
+      name: EnemyBullet_1
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01e0c37c9ccb8374b885e8b1b651048c
-      internalID: -1694231139
+      spriteID: 3fa31f5359f686b4f8378313a00eff38
+      internalID: -50565541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist_6
+      name: EnemyBullet_2
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70850b4dd85dc85469218949ee79eb17
-      internalID: 156149702
+      spriteID: fffb955cecafe5645b6828e370450e61
+      internalID: -150386245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist_7
+      name: EnemyBullet_3
       rect:
         serializedVersion: 2
         x: 48
         y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de06f1f775651154a935538e3c9ef4f8
-      internalID: 1868866287
+      spriteID: 2c7c2f640c173f9448d1da45f5aa5de4
+      internalID: -1463115647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cultist_8
+      name: EnemyBullet_4
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 16
-        height: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,8 +208,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a43f0e93101e104ca5bc27b3adddda1
-      internalID: 368577652
+      spriteID: 82d8f5c9dacaf2543a50cdeab8788d78
+      internalID: 619918033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyBullet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7119e55c20f2f459d425b49acfbc33
+      internalID: 1396533315
       vertices: []
       indices: 
       edges: []
@@ -309,15 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cultist_0: -1849051952
-      Cultist_1: -1119486046
-      Cultist_2: 1967855088
-      Cultist_3: 1835375345
-      Cultist_4: 1222990998
-      Cultist_5: -1694231139
-      Cultist_6: 156149702
-      Cultist_7: 1868866287
-      Cultist_8: 368577652
+      EnemyBullet_0: -23903365
+      EnemyBullet_1: -50565541
+      EnemyBullet_2: -150386245
+      EnemyBullet_3: -1463115647
+      EnemyBullet_4: 619918033
+      EnemyBullet_5: 1396533315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

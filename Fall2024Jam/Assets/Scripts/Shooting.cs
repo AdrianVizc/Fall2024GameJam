@@ -5,10 +5,12 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     [SerializeField] public float bulletForce = 20f;
+    [SerializeField] public float shootingCooldown = 1f;
 
     public Transform firePoint;
     public GameObject bulletPrefab;
     public Camera cam;
+    private float timer;
 
     Vector2 mousePos;
 
@@ -23,10 +25,11 @@ public class Shooting : MonoBehaviour
     void Update()
     {
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
-        if (Input.GetMouseButtonDown(0))
+        timer += Time.deltaTime;
+        if (Input.GetMouseButtonDown(0) && timer > shootingCooldown)
         {
             Shoot();
+            timer = 0f;
         }
     }
 
