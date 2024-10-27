@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Health hp;
 
+    [SerializeField]
+    private AudioClip impactSFX;
+
 
     void Start()
     {
@@ -65,6 +68,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int dmg)
     {
+        SoundFXManager.instance.PlaySFX(impactSFX, transform, 1f);
         currentHealth -= dmg;
         if (currentHealth <= 0)
         {
