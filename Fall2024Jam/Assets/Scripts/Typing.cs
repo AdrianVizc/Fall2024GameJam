@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement; // Required for scene switching
 
 public class Typing : MonoBehaviour
 {
@@ -19,7 +20,9 @@ public class Typing : MonoBehaviour
     [SerializeField] List<string> textList;             // List of texts to type out
     [SerializeField] List<Sprite> backgroundList;       // List of backgrounds to switch between
     [SerializeField] Image backgroundImage;             // The Image component for the background
+    [SerializeField] string nextSceneName;              // Name of the next scene to load after the last text
     private int currentTextIndex = 0;                   // Index of the current text in the list
+
 
     // Initialization
     void Start()
@@ -32,7 +35,12 @@ public class Typing : MonoBehaviour
 
     void StartNextText()
     {
-        if (currentTextIndex >= textList.Count) return; // No more text to display
+        if (currentTextIndex >= textList.Count)
+        {
+            // If all texts are done, switch to the next scene
+            SceneManager.LoadScene(nextSceneName);
+            return; // Exit method
+        }
 
         writer = textList[currentTextIndex]; // Get the current text from the list
 
@@ -73,9 +81,18 @@ public class Typing : MonoBehaviour
         // Add delay before switching to the next background and text
         yield return new WaitForSeconds(delayBetweenTextAndBackground);
 
-        // Move to next text and background after finishing typing
-        currentTextIndex++;
-        StartNextBackgroundAndText();
+        // Check if this is the last text in the list
+        if (currentTextIndex == textList.Count - 1)
+        {
+            // All texts and backgrounds are done, load the next scene
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            // Move to the next text and background
+            currentTextIndex++;
+            StartNextBackgroundAndText();
+        }
     }
 
     IEnumerator TypeWriterTMP()
@@ -102,15 +119,22 @@ public class Typing : MonoBehaviour
         // Add delay before switching to the next background and text
         yield return new WaitForSeconds(delayBetweenTextAndBackground);
 
-        // Move to next text and background after finishing typing
-        currentTextIndex++;
-        StartNextBackgroundAndText();
+        // Check if this is the last text in the list
+        if (currentTextIndex == textList.Count - 1)
+        {
+            // All texts and backgrounds are done, load the next scene
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            // Move to the next text and background
+            currentTextIndex++;
+            StartNextBackgroundAndText();
+        }
     }
 
     void StartNextBackgroundAndText()
     {
-        if (currentTextIndex >= textList.Count) return; // No more text or background to switch
-
         // Change the background image if there are background images provided
         if (backgroundList.Count > currentTextIndex && backgroundImage != null)
         {
@@ -120,5 +144,4 @@ public class Typing : MonoBehaviour
         // Start typing the next text
         StartNextText();
     }
-
 }

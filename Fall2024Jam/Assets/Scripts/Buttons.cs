@@ -11,7 +11,7 @@ public class Buttons : MonoBehaviour
     public void PlayButton()
     {
         SoundFXManager.instance.PlaySFX(buttonSFX, transform, 1f);
-        SceneManager.LoadScene("LevelScene");
+        SceneManager.LoadScene("Cutscene");
     }
 
     public void MainMenuButton()
