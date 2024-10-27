@@ -11,6 +11,7 @@ public class CultistBullet : MonoBehaviour
 
     private void Start()
     {
+        playerController = FindObjectOfType<PlayerController>();
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         Vector3 direction = player.transform.position - transform.position;
@@ -34,8 +35,9 @@ public class CultistBullet : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
+            Debug.Log("HIT PLAYER");
             Destroy(gameObject);
-            //playerController.TakeDamage(1);
+            playerController.TakeDamage(1);
         }
     }
 }
