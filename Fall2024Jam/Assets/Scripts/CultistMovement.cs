@@ -22,11 +22,16 @@ public class CultistMovement : MonoBehaviour
     private bool alreadyMoving;
     private bool collidedWithWall;
 
+    private Animator animator;
+
     private void Start()
     {
         currPos = transform.position;
         alreadyMoving = false;
         collidedWithWall = false;
+
+        animator = gameObject.GetComponent<Animator>();
+        StartCoroutine(IsMoving());
     }
     private void FixedUpdate()
     {
@@ -65,6 +70,25 @@ public class CultistMovement : MonoBehaviour
                 alreadyMoving = false;
             }
             yield return null;
+        }
+    }
+
+    private IEnumerator IsMoving()
+    {
+        while(true)
+        {
+            Vector2 prevPos = transform.position;
+            yield return new WaitForSeconds(Time.deltaTime);
+            Vector2 currPos = transform.position;
+
+            if(prevPos == currPos)
+            {
+                animator.SetBool("Moving", false);
+            }
+            else
+            {
+                animator.SetBool("Moving", true);
+            }
         }
     }
 

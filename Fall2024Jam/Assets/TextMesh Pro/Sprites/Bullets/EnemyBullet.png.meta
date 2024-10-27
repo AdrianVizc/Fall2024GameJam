@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bbf9a540df7b1a04dacc1f6508693493
+guid: ce0eaac3bb988b7438bc6cd167e055fc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,11 +106,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerBullet V2_0
+      name: EnemyBullet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2a403e7be660554fa97c62300d184d5
-      internalID: -320279397
+      spriteID: 5e30db7998caf6c4b8da60dfcd49eeda
+      internalID: -23903365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBullet V2_1
+      name: EnemyBullet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -145,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ff691d0d113f0945a74127a6681192f
-      internalID: 593127526
+      spriteID: 3fa31f5359f686b4f8378313a00eff38
+      internalID: -50565541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBullet V2_2
+      name: EnemyBullet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -166,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9c72393bbf7b6e44a68bf86e7093ed2
-      internalID: 1382699022
+      spriteID: fffb955cecafe5645b6828e370450e61
+      internalID: -150386245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBullet V2_3
+      name: EnemyBullet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -187,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2a5852445c100940a4cec98cfe29ef4
-      internalID: 937951251
+      spriteID: 2c7c2f640c173f9448d1da45f5aa5de4
+      internalID: -1463115647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBullet V2_4
+      name: EnemyBullet_4
       rect:
         serializedVersion: 2
         x: 64
@@ -208,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e972472aefccbe84b9b0fe56ed26ac37
-      internalID: -935805575
+      spriteID: 82d8f5c9dacaf2543a50cdeab8788d78
+      internalID: 619918033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerBullet V2_5
+      name: EnemyBullet_5
       rect:
         serializedVersion: 2
         x: 80
@@ -229,29 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c39bafa1ad6317b46a787b3587d88ff4
-      internalID: 487051104
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerBullet V2_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 124d1e917f1f37c4d8f7dba23c74aa21
-      internalID: 152145488
+      spriteID: eb7119e55c20f2f459d425b49acfbc33
+      internalID: 1396533315
       vertices: []
       indices: 
       edges: []
@@ -267,13 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerBullet V2_0: -320279397
-      PlayerBullet V2_1: 593127526
-      PlayerBullet V2_2: 1382699022
-      PlayerBullet V2_3: 937951251
-      PlayerBullet V2_4: -935805575
-      PlayerBullet V2_5: 487051104
-      PlayerBullet V2_6: 152145488
+      EnemyBullet_0: -23903365
+      EnemyBullet_1: -50565541
+      EnemyBullet_2: -150386245
+      EnemyBullet_3: -1463115647
+      EnemyBullet_4: 619918033
+      EnemyBullet_5: 1396533315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
