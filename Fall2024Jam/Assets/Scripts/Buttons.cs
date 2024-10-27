@@ -18,6 +18,7 @@ public class Buttons : MonoBehaviour
     {
         SoundFXManager.instance.PlaySFX(buttonSFX, transform, 1f);
         SceneManager.LoadScene("MainMenuScene");
+        Time.timeScale = 1f;
     }
 
     public void QuitButton()
@@ -25,5 +26,11 @@ public class Buttons : MonoBehaviour
         SoundFXManager.instance.PlaySFX(buttonSFX, transform, 1f);
         Application.Quit();
         Debug.Log("Quit");
+    }
+
+    public void PlayAgainButton()
+    {
+        SoundFXManager.instance.PlaySFX(buttonSFX, transform, 1f);
+        SceneManager.LoadScene("LevelScene");
     }
 }

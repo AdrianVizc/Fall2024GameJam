@@ -149,10 +149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf1fc096b6c55343814287143dddc8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomWaitTimeLowerBound: 3
-  randomWaitTimeUpperBound: 6
-  randomSpeedLowerBound: 3
-  randomSpeedUpperBound: 5
+  randomWaitTimeLowerBound: 2
+  randomWaitTimeUpperBound: 4
+  randomSpeedLowerBound: 4
+  randomSpeedUpperBound: 6
   randomDistanceLowerBound: -6
   randomDistanceUpperBound: 6
 --- !u!114 &7402052487400756166

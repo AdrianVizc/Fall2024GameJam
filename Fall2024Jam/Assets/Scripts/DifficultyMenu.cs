@@ -7,8 +7,7 @@ public class DifficultyMenu : MonoBehaviour
 {
     [SerializeField] private GameObject difficultyPanel;
 
-    [SerializeField]
-    private PlayerController player;
+    [SerializeField] private PlayerController player;
 
     private void Start()
     {

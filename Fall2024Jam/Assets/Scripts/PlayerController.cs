@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] GameObject deathMenu;
+
     public float movSpeed;
     Vector2 movement;
     Vector2 mousePos;
@@ -66,7 +68,8 @@ public class PlayerController : MonoBehaviour
         currentHealth -= dmg;
         if (currentHealth <= 0)
         {
-            Time.timeScale = 0;
+            Time.timeScale = 0f;
+            deathMenu.SetActive(true);            
         }
         hp.UpdateHealth();
     }
