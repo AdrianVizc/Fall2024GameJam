@@ -35,7 +35,6 @@ public class CultistBullet : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
-            Debug.Log("HIT PLAYER");
             Destroy(gameObject);
             playerController.TakeDamage(1);
         }
