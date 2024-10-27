@@ -660,6 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc7a5c6ca2b44c5458287a1fb60fddc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSFX: {fileID: 8300000, guid: d755b4818685ecd42ad34cd72fa5a806, type: 3}
 --- !u!1 &868852479
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletForce: 5
   shootingCooldown: 0.2
+  spellSFX: {fileID: 8300000, guid: 600ea53e47e93d044a23a9a00118abdc, type: 3}
   firePoint: {fileID: 186886090}
   bulletPrefab: {fileID: 661844397307974480, guid: c7dc89e06c5f17a4b97cea8a303d77e1, type: 3}
   cam: {fileID: 605721911}
@@ -1183,6 +1185,51 @@ Transform:
   - {fileID: 1741405889}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1443044287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443044289}
+  - component: {fileID: 1443044288}
+  m_Layer: 0
+  m_Name: SoundFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1443044288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443044287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e032dd07c6137da41b09e3968d699631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFXObject: {fileID: 8176283394694593178, guid: 1234a3d5c693cc340a939c57ade32df9, type: 3}
+--- !u!4 &1443044289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443044287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.8386352, y: 16.084734, z: 4.3497014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1451970432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,3 +1470,4 @@ SceneRoots:
   - {fileID: 615547073}
   - {fileID: 1285296427}
   - {fileID: 1019524441}
+  - {fileID: 1443044289}

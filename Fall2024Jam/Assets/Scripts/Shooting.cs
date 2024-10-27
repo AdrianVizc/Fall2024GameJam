@@ -6,6 +6,7 @@ public class Shooting : MonoBehaviour
 {
     [SerializeField] public float bulletForce = 20f;
     [SerializeField] public float shootingCooldown = 1f;
+    [SerializeField] private AudioClip spellSFX;
 
     public Transform firePoint;
     public GameObject bulletPrefab;
@@ -35,6 +36,7 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        SoundFXManager.instance.PlaySFX(spellSFX, transform, 1f);
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         Vector2 fireDirection = (mousePos - (Vector2)firePoint.position).normalized;
