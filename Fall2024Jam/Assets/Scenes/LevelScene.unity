@@ -655,6 +655,8 @@ MonoBehaviour:
   slightlyCrackedMirror: {fileID: 1762199200}
   veryCrackedMirror: {fileID: 1790287839}
   brokenMirror: {fileID: 244442077}
+  glassHit: {fileID: 8300000, guid: a423810f75ab5cc4da1f8ef42b826b52, type: 3}
+  glassBreak: {fileID: 8300000, guid: 7258d0c6d001abc418166c024e6746c0, type: 3}
   listOfEnemies:
   - {fileID: 1514419200}
   - {fileID: 265641292}
@@ -11262,6 +11264,8 @@ MonoBehaviour:
   slightlyCrackedMirror: {fileID: 216984691}
   veryCrackedMirror: {fileID: 639386610}
   brokenMirror: {fileID: 1493238539}
+  glassHit: {fileID: 8300000, guid: a423810f75ab5cc4da1f8ef42b826b52, type: 3}
+  glassBreak: {fileID: 8300000, guid: 7258d0c6d001abc418166c024e6746c0, type: 3}
   listOfEnemies:
   - {fileID: 1514419200}
   - {fileID: 265641292}
@@ -14494,6 +14498,8 @@ MonoBehaviour:
   slightlyCrackedMirror: {fileID: 1944140837}
   veryCrackedMirror: {fileID: 916667945}
   brokenMirror: {fileID: 1976602255}
+  glassHit: {fileID: 8300000, guid: a423810f75ab5cc4da1f8ef42b826b52, type: 3}
+  glassBreak: {fileID: 8300000, guid: 7258d0c6d001abc418166c024e6746c0, type: 3}
   listOfEnemies:
   - {fileID: 1406391371}
   - {fileID: 1747519977}
@@ -14624,6 +14630,8 @@ MonoBehaviour:
   slightlyCrackedMirror: {fileID: 1289426570}
   veryCrackedMirror: {fileID: 1743480558}
   brokenMirror: {fileID: 711453395}
+  glassHit: {fileID: 8300000, guid: a423810f75ab5cc4da1f8ef42b826b52, type: 3}
+  glassBreak: {fileID: 8300000, guid: 7258d0c6d001abc418166c024e6746c0, type: 3}
   listOfEnemies:
   - {fileID: 156743730}
   - {fileID: 361992}
@@ -20145,6 +20153,8 @@ MonoBehaviour:
   slightlyCrackedMirror: {fileID: 483236907}
   veryCrackedMirror: {fileID: 1641618963}
   brokenMirror: {fileID: 255898310}
+  glassHit: {fileID: 8300000, guid: a423810f75ab5cc4da1f8ef42b826b52, type: 3}
+  glassBreak: {fileID: 8300000, guid: 7258d0c6d001abc418166c024e6746c0, type: 3}
   listOfEnemies:
   - {fileID: 156743730}
   - {fileID: 361992}

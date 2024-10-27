@@ -9,6 +9,7 @@ public class MirrorController : MonoBehaviour
     [SerializeField] GameObject slightlyCrackedMirror;
     [SerializeField] GameObject veryCrackedMirror;
     [SerializeField] GameObject brokenMirror;
+    [SerializeField] private AudioClip glassHit;
     public List<GameObject> listOfEnemies = new List<GameObject>();
 
     private int bulletHitNum;
@@ -59,6 +60,7 @@ public class MirrorController : MonoBehaviour
             if(listOfEnemies.Count == 0)
             {
                 ++bulletHitNum;
+                SoundFXManager.instance.PlaySFX(glassHit, transform, 1f);
             }
         }
     }
