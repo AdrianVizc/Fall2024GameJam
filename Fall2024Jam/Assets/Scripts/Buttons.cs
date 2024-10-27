@@ -26,4 +26,10 @@ public class Buttons : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit");
     }
+
+    public void PlayAgainButton()
+    {
+        SoundFXManager.instance.PlaySFX(buttonSFX, transform, 1f);
+        SceneManager.LoadScene("LevelScene");
+    }
 }
