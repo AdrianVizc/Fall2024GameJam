@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float movSpeed;
     Vector2 movement;
     Vector2 mousePos;
+    Vector2 moveDir;
     public Rigidbody2D rb;
     public Camera cam;
 
@@ -31,12 +32,15 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        moveDir = new Vector2(movement.x, movement.y);
+        moveDir.Normalize();
+
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movSpeed * movement * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movSpeed * moveDir * Time.fixedDeltaTime);
 
     }
 
