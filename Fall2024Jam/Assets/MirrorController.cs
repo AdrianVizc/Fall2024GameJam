@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class MirrorController : MonoBehaviour
 {
@@ -10,63 +11,54 @@ public class MirrorController : MonoBehaviour
     [SerializeField] GameObject brokenMirror;
     public List<GameObject> listOfEnemies = new List<GameObject>();
 
+    private int bulletHitNum;
+
     private void Start()
     {
+        bulletHitNum = -1;
         slightlyCrackedMirror.SetActive(false);
         veryCrackedMirror.SetActive(false);
         brokenMirror.SetActive(false);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        CheckRoomForEnemies();
-        allEnemiesDead();
-
-    }
-
-    private void CheckRoomForEnemies()
-    {
-        for (int i = 0; i < listOfEnemies.Count; i++)
+        if (listOfEnemies.Count > 0)
         {
-            if (listOfEnemies[i] == null)
-            {
-                listOfEnemies.RemoveAt(i);
-            }
+            listOfEnemies = listOfEnemies.Where(item => item != null).ToList();
+        }
+        else if(bulletHitNum == -1)
+        {
+            ++bulletHitNum;
+        }
+
+        switch (bulletHitNum)
+        {
+            case 0:
+                fullMirror.SetActive(false);
+                slightlyCrackedMirror.SetActive(true);
+                break;
+            case 1:
+                slightlyCrackedMirror.SetActive(false);
+                veryCrackedMirror.SetActive(true);
+                break;
+            case 2:
+                veryCrackedMirror.SetActive(false);
+                brokenMirror.SetActive(true);
+                gameObject.GetComponent<Collider2D>().isTrigger = true;
+                break;
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        hideSlightlyCrackedMirror(collider);
-        hideVeryCrackedMirror(collider);
-        Debug.Log("<3 Dom");
-    }
-    
-    private void allEnemiesDead()
-    {
-        if (listOfEnemies.Count == 0)
+        if(collider.gameObject.CompareTag("PlayerBullet"))
         {
-           fullMirror.SetActive(false);
-           slightlyCrackedMirror.SetActive(true);
-           //Glass Crack Audio
-        }
-    }
-
-    private void hideSlightlyCrackedMirror(Collider2D collider)
-    {
-        if (collider.gameObject.CompareTag("PlayerBullet"))
-        {
-            slightlyCrackedMirror.SetActive(false);
-            veryCrackedMirror.SetActive(true);
-            //Glass Crack Audio
-        }
-    }
-    private void hideVeryCrackedMirror(Collider2D collider)
-    {
-        if (collider.gameObject.CompareTag("PlayerBullet"))
-        {
-            veryCrackedMirror.SetActive(false);
-            brokenMirror.SetActive(true);
-            //Glass Shatter Audio
+            Destroy(collider.gameObject);
+            if(listOfEnemies.Count == 0)
+            {
+                ++bulletHitNum;
+            }
         }
     }
 }
