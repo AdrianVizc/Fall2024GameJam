@@ -9577,9 +9577,9 @@ MonoBehaviour:
   veryCrackedMirror: {fileID: 1476784619}
   brokenMirror: {fileID: 125774576}
   listOfEnemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2142423736}
+  - {fileID: 1827215513}
+  - {fileID: 1428361849}
 --- !u!4 &1671434388
 Transform:
   m_ObjectHideFlags: 0
