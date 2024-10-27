@@ -75,13 +75,17 @@ private void Start()
                 deathMenu = GameObject.Find("DeathMenu");
                 if (pauseMenu != null)
                 {
-                    Destroy(pauseMenu);
+                    pauseMenu.SetActive(false);
+                    StartCoroutine(LoadLevel(2));
+                    
                 }
                 else if (deathMenu != null)
                 {
-                    Destroy(deathMenu);
+                    deathMenu.SetActive(false);
+                    StartCoroutine(LoadLevel(2));
+                    
                 }
-                StartCoroutine(LoadLevel(2));
+                
             }
             else
             {
