@@ -9,6 +9,8 @@ public class DifficultyMenu : MonoBehaviour
 
     [SerializeField] private PlayerController player;
 
+    [SerializeField] private Timer timer;
+
     private void Start()
     {
         Time.timeScale = 0f;
@@ -19,6 +21,7 @@ public class DifficultyMenu : MonoBehaviour
         player.SetStartingHealth(7);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
+        timer.difficultySelected = true;
     }
 
     public void MediumButton()
@@ -26,6 +29,7 @@ public class DifficultyMenu : MonoBehaviour
         player.SetStartingHealth(5);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
+        timer.difficultySelected = true;
     }
 
     public void HardButton()
@@ -33,6 +37,7 @@ public class DifficultyMenu : MonoBehaviour
         player.SetStartingHealth(3);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
+        timer.difficultySelected = true;
     }
 
     public void SinisterButton()
@@ -40,5 +45,6 @@ public class DifficultyMenu : MonoBehaviour
         player.SetStartingHealth(1);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
+        timer.difficultySelected = true;
     }
 }

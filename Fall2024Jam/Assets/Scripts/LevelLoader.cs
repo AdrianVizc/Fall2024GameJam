@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
+    [SerializeField] private Timer timer;
     public Animator transition;
 
     public float transitionTime = 3f;
@@ -34,6 +35,7 @@ public class LevelLoader : MonoBehaviour
                         //Debug.Log(counter);
                         if (counter == 6)
                         {
+                            timer.endGame = true;
                             LoadNextLevel();
                         }
                     }
