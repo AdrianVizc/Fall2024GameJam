@@ -43,7 +43,7 @@ public class MirrorController : MonoBehaviour
                 slightlyCrackedMirror.SetActive(false);
                 veryCrackedMirror.SetActive(true);
                 break;
-            case 2:
+            case >= 2:
                 slightlyCrackedMirror.SetActive(false);
                 veryCrackedMirror.SetActive(false);
                 brokenMirror.SetActive(true);

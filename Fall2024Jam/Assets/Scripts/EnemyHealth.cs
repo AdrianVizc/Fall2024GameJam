@@ -7,6 +7,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private int Health = 5;
     [SerializeField] private AudioClip deathSFX;
     [SerializeField] private AudioClip impactSFX;
+
     private Animator animator;
     private bool tookDamage;
     private float time;
@@ -37,9 +38,10 @@ public class EnemyHealth : MonoBehaviour
 
     private void Dead()
     {
-        if (Health == 0)
+        if (Health <= 0)
         {
             SoundFXManager.instance.PlaySFX(deathSFX, transform, 1f);
+
             Destroy(gameObject);
         }
     }
