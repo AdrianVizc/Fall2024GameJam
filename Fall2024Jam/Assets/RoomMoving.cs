@@ -7,11 +7,14 @@ public class RoomMoving : MonoBehaviour
 {
     public List<GameObject> gameObjects = new List<GameObject>();
 
+    private Transform player;
     public Camera cam;
     private bool isRoom1;
     private bool alreadySpawned;
     public Vector2 PosRoom1;
     public Vector2 PosRoom2;
+    public Vector2 PlayerPosition1;
+    public Vector2 PlayerPosition2;
     private Vector3 Room1Coords;
     private Vector3 Room2Coords;
 
@@ -25,6 +28,7 @@ public class RoomMoving : MonoBehaviour
         Room1Coords = new Vector3(PosRoom1.x,  PosRoom1.y, -10);
         Room2Coords = new Vector3(PosRoom2.x,  PosRoom2.y, -10);
         alreadySpawned = false;
+        player = GameObject.Find("Player").transform;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,11 +47,13 @@ public class RoomMoving : MonoBehaviour
             {
                 MoveCamera(Room2Coords);
                 isRoom1 = false;
+                MovePlayer(PlayerPosition2);
             }
             else if (!isRoom1)
             {
                 MoveCamera(Room1Coords);
                 isRoom1 = true;
+                MovePlayer(PlayerPosition1);
             }
         }
         
@@ -56,5 +62,10 @@ public class RoomMoving : MonoBehaviour
     private void MoveCamera(Vector3 position)
     {
         cam.transform.position = position;
+    }
+
+    private void MovePlayer(Vector2 position)
+    {
+        player.transform.position = position;
     }
 }
