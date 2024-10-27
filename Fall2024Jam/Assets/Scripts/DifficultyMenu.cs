@@ -16,21 +16,21 @@ public class DifficultyMenu : MonoBehaviour
 
     public void EasyButton()
     {
-        player.SetStartingHealth(5);
+        player.SetStartingHealth(7);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void MediumButton()
     {
-        player.SetStartingHealth(3);
+        player.SetStartingHealth(5);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void HardButton()
     {
-        player.SetStartingHealth(1);
+        player.SetStartingHealth(3);
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
     }
