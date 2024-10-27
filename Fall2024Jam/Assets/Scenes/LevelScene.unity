@@ -11334,7 +11334,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1705565603}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: MainMenuButton
         m_Mode: 1
@@ -15226,7 +15226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1705565603}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
         m_MethodName: QuitButton
         m_Mode: 1
@@ -15491,6 +15491,7 @@ GameObject:
   - component: {fileID: 1705565596}
   - component: {fileID: 1705565601}
   - component: {fileID: 1705565602}
+  - component: {fileID: 1705565603}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -15610,6 +15611,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   difficultyPanel: {fileID: 369329837}
   player: {fileID: 2150173430251796784}
+--- !u!114 &1705565603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705565595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc7a5c6ca2b44c5458287a1fb60fddc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSFX: {fileID: 0}
+  delayBeforeSceneLoad: 1
 --- !u!1001 &1859677948
 PrefabInstance:
   m_ObjectHideFlags: 0
