@@ -14,14 +14,18 @@ public class LevelLoader : MonoBehaviour
     private GameObject ghostBoss;
 
     private GameObject pauseMenu;
+    private GameObject deathMenu;
 
     private bool beatGame;
 
     private int counter = 0;
 
-    private void Start()
+
+
+private void Start()
     {
         beatGame = false;
+        
     }
     void Update()
     {
@@ -68,7 +72,15 @@ public class LevelLoader : MonoBehaviour
             {
                 transitionTime = 1;
                 pauseMenu = GameObject.Find("PauseMenu");
-                pauseMenu.SetActive(false);
+                deathMenu = GameObject.Find("DeathMenu");
+                if (pauseMenu != null)
+                {
+                    Destroy(pauseMenu);
+                }
+                else if (deathMenu != null)
+                {
+                    Destroy(deathMenu);
+                }
                 StartCoroutine(LoadLevel(2));
             }
             else
