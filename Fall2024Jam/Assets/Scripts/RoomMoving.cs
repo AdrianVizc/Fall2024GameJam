@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class RoomMoving : MonoBehaviour
 {
     private CameraShake cameraShake;
-    public List<GameObject> gameObjects = new List<GameObject>();
+    public List<GameObject> listOfEnemies = new List<GameObject>();
 
     private Transform player;
     public Camera cam;
@@ -24,7 +24,7 @@ public class RoomMoving : MonoBehaviour
     {
         cameraShake = GameObject.FindObjectOfType<CameraShake>();
 
-        foreach (GameObject enemy in gameObjects)
+        foreach (GameObject enemy in listOfEnemies)
         {
             enemy.SetActive(false);
         }
@@ -73,10 +73,15 @@ public class RoomMoving : MonoBehaviour
     IEnumerator Delay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        foreach (GameObject enemy in gameObjects)
+        foreach (GameObject enemy in listOfEnemies)
         {
             enemy.SetActive(true);
         }
         alreadySpawned = true;
+    }
+
+    public List<GameObject> GetListOfEnemies()
+    {
+        return listOfEnemies;
     }
 }

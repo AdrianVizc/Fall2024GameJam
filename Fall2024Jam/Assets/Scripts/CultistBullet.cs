@@ -21,11 +21,19 @@ public class CultistBullet : MonoBehaviour
     {
         HitWall(collider);
         HitPlayer(collider);        
+        HitMirror(collider);        
     }
 
     private void HitWall(Collider2D collider)
     {
         if (collider.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void HitMirror(Collider2D collider)
+    {
+        if (collider.tag == "Mirror")
         {
             Destroy(gameObject);
         }

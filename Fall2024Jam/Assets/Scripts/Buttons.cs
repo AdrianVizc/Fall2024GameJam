@@ -7,11 +7,19 @@ public class Buttons : MonoBehaviour
 {
     [SerializeField] private AudioClip buttonSFX;
 
-
+    private LevelLoader levelLoader;
+    private void Start()
+    {
+        if (levelLoader == null)
+        {
+            levelLoader = FindObjectOfType<LevelLoader>();
+        }
+    }
     public void PlayButton()
     {
         SoundFXManager.instance.PlaySFX(buttonSFX, transform, 1f);
-        SceneManager.LoadScene("Cutscene");
+        levelLoader.LoadNextLevel();
+        //SceneManager.LoadScene("Cutscene");
     }
 
     public void MainMenuButton()

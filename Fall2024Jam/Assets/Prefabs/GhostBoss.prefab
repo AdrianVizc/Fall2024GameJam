@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42536487d1e16ca429d8d9e96ecb3411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 50
+  Health: 25
   deathSFX: {fileID: 8300000, guid: 6b97a1b75d5b6a14489ac865030f2c1c, type: 3}
   impactSFX: {fileID: 8300000, guid: 800b773f03d774a4da65273d020df6ca, type: 3}
 --- !u!195 &7871900051995460220
@@ -211,7 +211,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
