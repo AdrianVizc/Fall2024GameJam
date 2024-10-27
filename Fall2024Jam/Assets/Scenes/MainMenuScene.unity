@@ -190,8 +190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 612, y: 108.08693}
-  m_SizeDelta: {x: 491.41, y: 205.722}
+  m_AnchoredPosition: {x: 500, y: 169}
+  m_SizeDelta: {x: 256.2799, y: 111.0167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &353549138
 MonoBehaviour:
@@ -418,8 +418,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -444, y: 173}
-  m_SizeDelta: {x: 932.57, y: 534.77}
+  m_AnchoredPosition: {x: 0, y: 370}
+  m_SizeDelta: {x: 1628.1636, y: 204.9345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &529264248
 MonoBehaviour:
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cult Conspiracy
+  m_text: CULT CONSPIRACY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea535d2eca9f576459937bcb7071170e, type: 2}
   m_sharedMaterial: {fileID: -2235569460542690026, guid: ea535d2eca9f576459937bcb7071170e, type: 2}
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -880,8 +880,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1189,8 +1189,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 612, y: 354}
-  m_SizeDelta: {x: 491.41, y: 205.722}
+  m_AnchoredPosition: {x: -400, y: 169}
+  m_SizeDelta: {x: 259.5456, y: 107.7511}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1138655777
 MonoBehaviour:
@@ -1449,8 +1449,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

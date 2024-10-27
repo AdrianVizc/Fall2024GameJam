@@ -34,4 +34,11 @@ public class DifficultyMenu : MonoBehaviour
         difficultyPanel.SetActive(false);
         Time.timeScale = 1f;
     }
+
+    public void SinisterButton()
+    {
+        player.SetStartingHealth(1);
+        difficultyPanel.SetActive(false);
+        Time.timeScale = 1f;
+    }
 }
