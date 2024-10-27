@@ -22,7 +22,27 @@ public class Typing : MonoBehaviour
     [SerializeField] Image backgroundImage;             // The Image component for the background
     [SerializeField] string nextSceneName;              // Name of the next scene to load after the last text
     private int currentTextIndex = 0;                   // Index of the current text in the list
+    private bool isTyping = false;
 
+    void Update()
+    {
+        // Check for mouse click to advance the text
+        if (Input.GetMouseButtonDown(0)) // Left mouse button
+        {
+            if (isTyping)
+            {
+                // If typing, finish the current text immediately
+                currentTextIndex++;
+                StopAllCoroutines(); // Stop current typing coroutines
+                StartNextBackgroundAndText();
+            }
+            else
+            {
+                // If not typing, go to the next text
+                StartNextText();
+            }
+        }
+    }
 
     // Initialization
     void Start()
@@ -59,6 +79,7 @@ public class Typing : MonoBehaviour
 
     IEnumerator TypeWriterText()
     {
+        isTyping = true;
         _text.text = leadingCharBeforeDelay ? leadingChar : "";
         yield return new WaitForSeconds(delayBeforeStart);
 
@@ -80,6 +101,7 @@ public class Typing : MonoBehaviour
 
         // Add delay before switching to the next background and text
         yield return new WaitForSeconds(delayBetweenTextAndBackground);
+        isTyping = false;
 
         // Check if this is the last text in the list
         if (currentTextIndex == textList.Count - 1)
@@ -97,6 +119,7 @@ public class Typing : MonoBehaviour
 
     IEnumerator TypeWriterTMP()
     {
+        isTyping = true;
         _tmpProText.text = leadingCharBeforeDelay ? leadingChar : "";
         yield return new WaitForSeconds(delayBeforeStart);
 
@@ -118,6 +141,7 @@ public class Typing : MonoBehaviour
 
         // Add delay before switching to the next background and text
         yield return new WaitForSeconds(delayBetweenTextAndBackground);
+        isTyping = false;
 
         // Check if this is the last text in the list
         if (currentTextIndex == textList.Count - 1)
