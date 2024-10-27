@@ -23663,6 +23663,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5869170249740699735, guid: 974d434d3986b804c84f25f052f4100f, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 8073535}
+    - target: {fileID: 5869170249740699735, guid: 974d434d3986b804c84f25f052f4100f, type: 3}
       propertyPath: transitionTime
       value: 7
       objectReference: {fileID: 0}
