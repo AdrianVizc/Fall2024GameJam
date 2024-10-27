@@ -115,6 +115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 5
+  deathSFX: {fileID: 8300000, guid: 6b97a1b75d5b6a14489ac865030f2c1c, type: 3}
+  impactSFX: {fileID: 8300000, guid: 800b773f03d774a4da65273d020df6ca, type: 3}
 --- !u!50 &3548551123942439703
 Rigidbody2D:
   serializedVersion: 4

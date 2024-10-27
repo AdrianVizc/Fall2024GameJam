@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int Health = 5;
+    [SerializeField] private AudioClip deathSFX;
+    [SerializeField] private AudioClip impactSFX;
 
     private void Update()
     {
@@ -15,6 +17,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (Health == 0)
         {
+            SoundFXManager.instance.PlaySFX(deathSFX, transform, 1f);
             Destroy(gameObject);
         }
     }
@@ -24,6 +27,7 @@ public class EnemyHealth : MonoBehaviour
         if (collider.tag == "PlayerBullet")
         {
             Health -= 1;
+            SoundFXManager.instance.PlaySFX(impactSFX, transform, 1f);
             //Debug.Log("Hit Enemy");
         }
         /*else

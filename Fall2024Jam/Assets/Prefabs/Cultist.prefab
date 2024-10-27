@@ -135,6 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 5
+  deathSFX: {fileID: 8300000, guid: 62d528f37dae1f24a8181210be3ddc6b, type: 3}
+  impactSFX: {fileID: 8300000, guid: 800b773f03d774a4da65273d020df6ca, type: 3}
 --- !u!114 &6312256877294517102
 MonoBehaviour:
   m_ObjectHideFlags: 0
