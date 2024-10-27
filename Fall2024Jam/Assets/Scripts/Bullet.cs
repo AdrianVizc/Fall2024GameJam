@@ -25,6 +25,10 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collider.tag == "Boss")
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void BulletTimer()

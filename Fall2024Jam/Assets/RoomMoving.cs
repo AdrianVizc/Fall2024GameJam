@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class RoomMoving : MonoBehaviour
 {
+    private CameraShake cameraShake;
     public List<GameObject> gameObjects = new List<GameObject>();
 
     private Transform player;
@@ -21,6 +22,8 @@ public class RoomMoving : MonoBehaviour
 
     void Start()
     {
+        cameraShake = GameObject.FindObjectOfType<CameraShake>();
+
         foreach (GameObject enemy in gameObjects)
         {
             enemy.SetActive(false);
@@ -59,6 +62,7 @@ public class RoomMoving : MonoBehaviour
     private void MoveCamera(Vector3 position)
     {
         cam.transform.position = position;
+        cameraShake.cameraInitialPos = position;
     }
 
     private void MovePlayer(Vector2 position)
