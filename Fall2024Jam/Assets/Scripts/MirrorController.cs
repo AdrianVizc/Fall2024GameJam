@@ -43,6 +43,7 @@ public class MirrorController : MonoBehaviour
                 veryCrackedMirror.SetActive(true);
                 break;
             case 2:
+                slightlyCrackedMirror.SetActive(false);
                 veryCrackedMirror.SetActive(false);
                 brokenMirror.SetActive(true);
                 gameObject.GetComponent<Collider2D>().isTrigger = true;

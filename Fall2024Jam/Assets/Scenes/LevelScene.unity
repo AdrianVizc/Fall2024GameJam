@@ -14943,7 +14943,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your have compelted your journey for now...
+  m_text: Your have completed your journey for now...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea535d2eca9f576459937bcb7071170e, type: 2}
   m_sharedMaterial: {fileID: -2235569460542690026, guid: ea535d2eca9f576459937bcb7071170e, type: 2}

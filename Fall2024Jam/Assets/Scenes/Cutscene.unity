@@ -680,7 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforeStart: 1
-  timeBtwChars: 0.15
+  timeBtwChars: 0.1
   delayBetweenTextAndBackground: 1
   leadingChar: 
   leadingCharBeforeDelay: 0
