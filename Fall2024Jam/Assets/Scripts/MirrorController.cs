@@ -40,14 +40,14 @@ public class MirrorController : MonoBehaviour
         hideVeryCrackedMirror(collider);
         Debug.Log("<3 Dom");
     }
-    
+
     private void allEnemiesDead()
     {
         if (listOfEnemies.Count == 0)
         {
-           fullMirror.SetActive(false);
-           slightlyCrackedMirror.SetActive(true);
-           //Glass Crack Audio
+            fullMirror.SetActive(false);
+            slightlyCrackedMirror.SetActive(true);
+            //Glass Crack Audio
         }
     }
 
