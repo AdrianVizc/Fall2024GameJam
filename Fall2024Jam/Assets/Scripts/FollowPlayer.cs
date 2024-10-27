@@ -9,6 +9,9 @@ public class FollowPlayer: MonoBehaviour
     private NavMeshAgent agent;
     private PlayerController playerController;
 
+    [SerializeField]
+    private EnemyHealth bossHealth;
+
     void Start()
     {
         playerController = FindObjectOfType<PlayerController>();
@@ -25,10 +28,21 @@ public class FollowPlayer: MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
-            playerController.TakeDamage(1);
+            if (gameObject.CompareTag("Boss"))
+            {
+                playerController.TakeDamage(1);
+                if (bossHealth.GetHealth() >= 0)
+                {
+                    transform.position = new Vector2(0, 28);
+                }
+            }
+            else
+            {
+                Destroy(gameObject);
+                playerController.TakeDamage(1);
+            }
         }
     }
 }
