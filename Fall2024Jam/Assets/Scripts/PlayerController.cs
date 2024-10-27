@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
         currentHealth -= dmg;
         if (currentHealth <= 0)
         {
-            //Game Over
+            Time.timeScale = 0;
         }
         hp.UpdateHealth();
     }

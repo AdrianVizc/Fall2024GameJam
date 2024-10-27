@@ -16276,7 +16276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletForce: 5
-  shootingCooldown: 1
+  shootingCooldown: 0.5
   firePoint: {fileID: 4173968656254930856}
   bulletPrefab: {fileID: 661844397307974480, guid: c7dc89e06c5f17a4b97cea8a303d77e1, type: 3}
   cam: {fileID: 519420031}

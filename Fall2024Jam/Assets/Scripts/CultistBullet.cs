@@ -7,6 +7,7 @@ public class CultistBullet : MonoBehaviour
     [SerializeField] private float force = 20;
     private GameObject player;
     private Rigidbody2D rb;
+    private PlayerController playerController;
 
     private void Start()
     {
@@ -17,13 +18,24 @@ public class CultistBullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "Player")
-        {
-            Destroy(gameObject);
-        }
+        HitWall(collider);
+        HitPlayer(collider);        
+    }
+
+    private void HitWall(Collider2D collider)
+    {
         if (collider.tag == "Wall")
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void HitPlayer(Collider2D collider)
+    {
+        if (collider.tag == "Player")
+        {
+            Destroy(gameObject);
+            playerController.TakeDamage(1);
         }
     }
 }
