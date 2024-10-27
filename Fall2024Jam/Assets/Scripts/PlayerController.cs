@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Health hp;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -41,7 +42,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movSpeed * moveDir * Time.fixedDeltaTime);
-
     }
 
     public void SetStartingHealth(int health)

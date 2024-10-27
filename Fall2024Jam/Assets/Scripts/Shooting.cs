@@ -37,6 +37,7 @@ public class Shooting : MonoBehaviour
     void Shoot()
     {
         SoundFXManager.instance.PlaySFX(spellSFX, transform, 1f);
+
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         Vector2 fireDirection = (mousePos - (Vector2)firePoint.position).normalized;
