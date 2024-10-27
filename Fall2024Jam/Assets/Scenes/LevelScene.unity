@@ -9894,7 +9894,6 @@ GameObject:
   - component: {fileID: 326450486}
   - component: {fileID: 326450485}
   - component: {fileID: 326450484}
-  - component: {fileID: 326450483}
   m_Layer: 0
   m_Name: Cultist
   m_TagString: Enemy
@@ -9902,33 +9901,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &326450483
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326450482}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 6900
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &326450484
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9977,7 +9949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rateOfFire: 2
-  bullet: {fileID: 5149911216038878018, guid: b47b561ddd99acb469e1a052a42bd628, type: 3}
+  bullet: {fileID: 583550009825545392, guid: b95d9d6187304d7478dc99550822b675, type: 3}
   bulletPos: {fileID: 868350758}
 --- !u!114 &326450486
 MonoBehaviour:
@@ -16513,7 +16485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletForce: 5
   firePoint: {fileID: 4173968656254930856}
-  bulletPrefab: {fileID: 7358245919926911428, guid: c7dc89e06c5f17a4b97cea8a303d77e1, type: 3}
+  bulletPrefab: {fileID: 661844397307974480, guid: c7dc89e06c5f17a4b97cea8a303d77e1, type: 3}
   cam: {fileID: 519420031}
 --- !u!1 &7662794175087380491
 GameObject:
