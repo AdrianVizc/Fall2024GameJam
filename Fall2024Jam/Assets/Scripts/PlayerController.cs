@@ -73,4 +73,9 @@ public class PlayerController : MonoBehaviour
         }
         hp.UpdateHealth();
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
 }
