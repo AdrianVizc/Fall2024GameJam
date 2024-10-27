@@ -17,19 +17,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 076212d3089574e4abf8e273a196b248
-  - enabled: 0
-    path: Assets/Scenes/DifficultyScene.unity
-    guid: 127a97bd22a82d3438c013ea0b2fb653
-  - enabled: 0
-    path: Assets/Scenes/Cutscene/Cutscene2.unity
-    guid: 08e2a0e1a39742241a9475f4261098b3
-  - enabled: 0
-    path: Assets/Scenes/Cutscene/Cutscene3.unity
-    guid: 042a982a7c5130249be44e538098a89b
-  - enabled: 0
-    path: Assets/Scenes/Cutscene/Cutscene4.unity
-    guid: 16ebc1b820ddfb0409264d7fa4f87ef5
-  - enabled: 0
-    path: Assets/Scenes/Cutscene/Cutscene5.unity
-    guid: bda7942e3c08a3740b37f2e7ff3bcc6f
   m_configObjects: {}
