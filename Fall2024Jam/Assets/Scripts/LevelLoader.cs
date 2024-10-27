@@ -13,11 +13,15 @@ public class LevelLoader : MonoBehaviour
 
     private GameObject ghostBoss;
 
+    private GameObject pauseMenu;
+
+    private bool beatGame;
+
     private int counter = 0;
 
     private void Start()
     {
-        
+        beatGame = false;
     }
     void Update()
     {
@@ -36,6 +40,7 @@ public class LevelLoader : MonoBehaviour
                         if (counter == 6)
                         {
                             timer.endGame = true;
+                            beatGame = true;
                             LoadNextLevel();
                         }
                     }
@@ -57,6 +62,20 @@ public class LevelLoader : MonoBehaviour
                 StartCoroutine(LoadLevel(0));
             }
         }
+        else if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            if (beatGame == false)
+            {
+                transitionTime = 1;
+                pauseMenu = GameObject.Find("PauseMenu");
+                pauseMenu.SetActive(false);
+                StartCoroutine(LoadLevel(2));
+            }
+            else
+            {
+                StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+            }
+        }
         else
         {
             StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
@@ -65,7 +84,7 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator LoadLevel(int levelIndex)
     {
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 2 && beatGame)
         {
             transition.SetTrigger("BeatGame");
         }
