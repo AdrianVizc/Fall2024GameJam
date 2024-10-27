@@ -15702,6 +15702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletForce: 20
   shootingCooldown: 1
+  spellSFX: {fileID: 0}
   firePoint: {fileID: 1988099355}
   bulletPrefab: {fileID: 8654921842343410223, guid: beb6e51c8aef31148830de5545fe7285, type: 3}
   cam: {fileID: 0}
@@ -16277,6 +16278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletForce: 5
   shootingCooldown: 0.5
+  spellSFX: {fileID: 8300000, guid: 600ea53e47e93d044a23a9a00118abdc, type: 3}
   firePoint: {fileID: 4173968656254930856}
   bulletPrefab: {fileID: 661844397307974480, guid: c7dc89e06c5f17a4b97cea8a303d77e1, type: 3}
   cam: {fileID: 519420031}

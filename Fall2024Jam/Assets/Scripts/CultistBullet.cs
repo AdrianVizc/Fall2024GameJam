@@ -35,7 +35,7 @@ public class CultistBullet : MonoBehaviour
         if (collider.tag == "Player")
         {
             Destroy(gameObject);
-            playerController.TakeDamage(1);
+            //playerController.TakeDamage(1);
         }
     }
 }
