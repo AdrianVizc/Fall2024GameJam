@@ -59,4 +59,9 @@ public class EnemyHealth : MonoBehaviour
             Debug.Log("Seomthing Else");
         }*/
     }
+
+    public int GetHealth()
+    {
+        return Health;
+    }
 }
