@@ -685,7 +685,7 @@ MonoBehaviour:
   leadingChar: 
   leadingCharBeforeDelay: 0
   textList:
-  - Rumors of a spooky cult headquartered in a graveyard have begun to spread.
+  - Rumors of a spooky cult headquartered in a cave have begun to spread.
   - Disguised as a cultist, an investigative journalist attempts to infiltrate their
     base.
   - Upon arrival, a perished cult member was found.
@@ -694,7 +694,7 @@ MonoBehaviour:
   backgroundList:
   - {fileID: 21300000, guid: 9f90751c812ddb643abf23a151984f19, type: 3}
   - {fileID: 21300000, guid: a4234d4cb105bd04ca705bdd15dbfc30, type: 3}
-  - {fileID: 21300000, guid: 9f90751c812ddb643abf23a151984f19, type: 3}
+  - {fileID: 21300000, guid: 29c1b2cf3da780647ad8f1693fdfca9f, type: 3}
   - {fileID: 21300000, guid: 9f90751c812ddb643abf23a151984f19, type: 3}
   - {fileID: 21300000, guid: 9f90751c812ddb643abf23a151984f19, type: 3}
   backgroundImage: {fileID: 547489758}
