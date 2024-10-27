@@ -17,6 +17,7 @@ public class RoomMoving : MonoBehaviour
     public Vector2 PlayerPosition2;
     private Vector3 Room1Coords;
     private Vector3 Room2Coords;
+    private float spawnDelay = 0.2f;
 
     void Start()
     {
@@ -37,11 +38,7 @@ public class RoomMoving : MonoBehaviour
         {
             if (alreadySpawned == false)
             {
-                foreach (GameObject enemy in gameObjects)
-                {
-                    enemy.SetActive(true);
-                }
-                alreadySpawned = true;
+                StartCoroutine(Delay(spawnDelay));                
             }            
             if (isRoom1)
             {
@@ -67,5 +64,15 @@ public class RoomMoving : MonoBehaviour
     private void MovePlayer(Vector2 position)
     {
         player.transform.position = position;
+    }
+
+    IEnumerator Delay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        foreach (GameObject enemy in gameObjects)
+        {
+            enemy.SetActive(true);
+        }
+        alreadySpawned = true;
     }
 }
