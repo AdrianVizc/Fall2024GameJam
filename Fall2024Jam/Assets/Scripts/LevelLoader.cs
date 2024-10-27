@@ -50,11 +50,7 @@ public class LevelLoader : MonoBehaviour
                     }
                 }
             }
-        }        
-    }
-
-    public void LoadNextLevel()
-    {
+        }
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -62,7 +58,11 @@ public class LevelLoader : MonoBehaviour
                 StartCoroutine(LoadLevel(0));
             }
         }
-        else if (SceneManager.GetActiveScene().buildIndex == 2)
+    }
+
+    public void LoadNextLevel()
+    {        
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             if (beatGame == false)
             {
