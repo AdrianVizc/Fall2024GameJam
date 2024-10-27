@@ -661,7 +661,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonSFX: {fileID: 8300000, guid: d755b4818685ecd42ad34cd72fa5a806, type: 3}
-  delayBeforeSceneLoad: 1
 --- !u!1 &868852479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1492,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
