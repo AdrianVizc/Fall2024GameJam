@@ -400,7 +400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8f3c8f1a05aa00c44a952e61a0daa3a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f90751c812ddb643abf23a151984f19, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -580,9 +580,9 @@ MonoBehaviour:
   backgroundList:
   - {fileID: 21300000, guid: 9f90751c812ddb643abf23a151984f19, type: 3}
   - {fileID: 21300000, guid: a4234d4cb105bd04ca705bdd15dbfc30, type: 3}
-  - {fileID: 21300000, guid: aa00c72b5d6e4de4c813905fd2def45b, type: 3}
-  - {fileID: 21300000, guid: ab1198743e37d8442877a5e17ccfc4db, type: 3}
-  - {fileID: 21300000, guid: 16e1624adc43fb64284a5caeab361678, type: 3}
+  - {fileID: 21300000, guid: 9f90751c812ddb643abf23a151984f19, type: 3}
+  - {fileID: 21300000, guid: 9f90751c812ddb643abf23a151984f19, type: 3}
+  - {fileID: 21300000, guid: 9f90751c812ddb643abf23a151984f19, type: 3}
   backgroundImage: {fileID: 547489758}
   nextSceneName: LevelScene
 --- !u!1 &1350445654
