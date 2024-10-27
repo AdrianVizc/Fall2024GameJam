@@ -19108,7 +19108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyPanel: {fileID: 1567685684}
-  player: {fileID: 0}
+  player: {fileID: 2150173430251796784}
 --- !u!114 &2077243161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19336,7 +19336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d81719edf6ee2e408db7d61980cf914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathMenu: {fileID: 0}
+  deathMenu: {fileID: 1276528495}
   movSpeed: 5
   rb: {fileID: 1479056742053739193}
   cam: {fileID: 519420031}
@@ -19457,6 +19457,10 @@ PrefabInstance:
     - target: {fileID: 670321567658070244, guid: cf3bf3b839e8fc0448949d7b95c3720e, type: 3}
       propertyPath: m_TagString
       value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871900051995460220, guid: cf3bf3b839e8fc0448949d7b95c3720e, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7871900051995460220, guid: cf3bf3b839e8fc0448949d7b95c3720e, type: 3}
       propertyPath: m_AutoTraverseOffMeshLink
